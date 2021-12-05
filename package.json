@@ -1,0 +1,29 @@
+{
+  "name": "awesome-button-styles",
+  "version": "1.0.0",
+  "description": "Awesome Button Styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch src/style.scss:dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salihonder05/Awesome-Button-Styles.git"
+  },
+  "keywords": [
+    "Css",
+    "Scss",
+    "Sass",
+    "Buttons"
+  ],
+  "author": "Salih ÖNDER",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/salihonder05/Awesome-Button-Styles/issues"
+  },
+  "homepage": "https://github.com/salihonder05/Awesome-Button-Styles#readme",
+  "devDependencies": {
+    "reset-css": "^5.0.1"
+  }
+}
