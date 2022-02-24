@@ -1,44 +1,141 @@
 @import '../node_modules/reset-css/sass/reset';
 @import 'other_resets';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-* {
-	font-family: 'Montserrat', sans-serif !important;
-	letter-spacing: 1.9px;
-}
+
+
+$green-darker : #12683F;
+$green : #1EA966;
+$green-lighter-1 : #38DC8C;
+$green-lighter-2 : #79E7B2;
+
+$blue-darker : #1E6D8F;
+$blue : #2C9DCE;
+$blue-lighter-1 : #68BBDF;
+$blue-lighter-2 : #A7D7EC;
+
+$gold-darker : #6A570C;
+$gold : #AE8F13;
+$gold-lighter-1 : #E7C127;
+$gold-lighter-2 : #EFD56C;
+
+$red-darker : #8A2834;
+$red : #C6394A;
+$red-lighter-1 : #D77580;
+$red-lighter-2 : #E8B0B6;
+
+$purple-darker : #4100B3;
+$purple : #5E00FF;
+$purple-lighter-1 : #8E4DFF;
+$purple-lighter-2 : #BE99FF;
+
+$black-darker : #000000;
+$black : #21232C;
+$black-lighter : #333333;
+
+$gray : #424657;
+$gray-lighter-1 : #636983;
+$gray-lighter-2 : #8B90A7;
+$gray-lighter-3 : #B6BAC8;
+$gray-lighter-4 : #E2E3E9;
+
+
 
 button, .button{
+	all: unset;
+	font-family: Helvetica, sans-serif;
 	font-weight: bold;
-	padding: 8px 24px;
+	margin:0;
+	padding:0;
+	padding: 8px 18px;
 	cursor:pointer;
-	text-transform: uppercase;
+	font-size:14px;
+	outline:none;
+	border-radius:3px;
+	transition: background-color ease 0.3s;
+	text-align:center;
+	
 }
 
-.bg-green {
-	background-color: #ACECD5;
-	color: rgba($color: #000, $alpha: 0.5) !important;
-} 
 
-.bg-yellow {
-	background-color: #FFF9AA;
-} 
-
-.bg-orange {
-	background-color: #FFD5B8;
-} 
-
-.bg-ping {
-	background-color: #FFB9B3;
-} 
-
-.gray-border {
-	border: solid;
-	border-width: 2px;
-	border-color: rgba($color: #000000, $alpha: 0.4);
-	border-radius: 2px;
-	
-
+.success {
+	background-color: $green;
+	color: white;
+	text-shadow: 0 1px 1px $green-darker;
+	border-bottom: 2px solid $green-darker;
 	&:hover {
-		border-color:rgba($color: #000000, $alpha: 0.8);
-		color: rgba($color: #000, $alpha: 0.8) !important;
+		background-color: $green-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
+	}
+}
+
+.danger {
+	background-color: $red;
+	color: white;
+	text-shadow: 0 1px 1px $red-darker;
+	border-bottom: 2px solid $red-darker;
+	&:hover {
+		background-color: $red-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
+	}
+}
+
+.info {
+	background-color: $gold;
+	color: white;
+	text-shadow: 0 1px 1px $gold-darker;
+	border-bottom: 2px solid $gold-darker;
+	&:hover {
+		background-color: $gold-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
+	}
+}
+
+.primary {
+	background-color: $blue;
+	color: white;
+	text-shadow: 0 1px 1px $blue-darker;
+	border-bottom: 2px solid $blue-darker;
+	&:hover {
+		background-color: $blue-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
+	}
+}
+
+.dark {
+	background-color: $black;
+	color: white;
+	text-shadow: 0 1px 1px $black-darker;
+	border-bottom: 2px solid $black-darker;
+	&:hover {
+		background-color: $black-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
+	}
+}
+
+.other {
+	background-color: $purple;
+	color: white;
+	text-shadow: 0 1px 1px $purple-darker;
+	border-bottom: 2px solid $purple-darker;
+	&:hover {
+		background-color: $purple-darker;
+		border-bottom-color: $black-lighter;;
+
+		text-shadow: 0 1px 1px $black;
+
 	}
 }
