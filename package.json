@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/salihonder05/Awesome-Button-Styles#readme",
   "devDependencies": {
-    "reset-css": "^5.0.1"
+    "reset-css": "^5.0.1",
+    "sass": "^1.49.8"
   }
 }
